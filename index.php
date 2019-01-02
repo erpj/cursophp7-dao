@@ -22,15 +22,24 @@ require_once("config.php");
 //$usuario->login("jose","123456");
 //echo $usuario;
 
+
+//criando um novo usuario
 //$aluno = new Usuario("bosta","654456");
 //$aluno->insert();
 //echo $aluno;
 
-//criando um novo usuario
 
+//Alterar usuario
+//$usuario = new Usuario();
+//$usuario->loadbyId(5);
+//$usuario->update("professor","999999");
+//echo $usuario;
+
+
+//Deletar Usuario
 $usuario = new Usuario();
-$usuario->loadbyId(5);
-$usuario->update("professor","999999");
+$usuario->loadbyId(2);
+$usuario->delete();
 
 echo $usuario;
 
